@@ -1,4 +1,4 @@
-#Dashboard – Health Campaign Performance Dashboard
+# Health Campaign Performance Dashboard
 
 Created by **Cameron Olivier**  
 
