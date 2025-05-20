@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediMetrics Dashboard – Cameron Olivier</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-teal-600">MediMetrics</h1>
+    <span class="text-sm text-gray-600">Welcome, Cameron</span>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+      <!-- Campaign Metrics -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700">Email Campaign CTR</h2>
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700">Website Traffic</h2>
+        <canvas id="lineChart"></canvas>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-2 text-gray-700">Social Engagement</h2>
+        <canvas id="pieChart"></canvas>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-xs text-gray-500 p-4 mt-8">
+    © 2025 MediMetrics. This is a fictional project for portfolio use only.
+  </footer>
+
+  <!-- Chart Scripts -->
+  <script>
+    const barChart = new Chart(document.getElementById('barChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Heart Health', 'Diabetes Awareness', 'Flu Season', 'Mental Health'],
+        datasets: [{
+          label: 'Click-Through Rate (%)',
+          data: [12, 9, 15, 11],
+          backgroundColor: '#14b8a6'
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: { beginAtZero: true }
+        }
+      }
+    });
+
+    const lineChart = new Chart(document.getElementById('lineChart'), {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr'],
+        datasets: [{
+          label: 'Visitors (in thousands)',
+          data: [20, 35, 30, 45],
+          borderColor: '#ec4899',
+          backgroundColor: 'rgba(236, 72, 153, 0.2)',
+          fill: true
+        }]
+      },
+      options: { responsive: true }
+    });
+
+    const pieChart = new Chart(document.getElementById('pieChart'), {
+      type: 'pie',
+      data: {
+        labels: ['Facebook', 'Instagram', 'Twitter', 'LinkedIn'],
+        datasets: [{
+          label: 'Engagement Share',
+          data: [40, 25, 20, 15],
+          backgroundColor: ['#0ea5e9', '#22c55e', '#facc15', '#f97316']
+        }]
+      },
+      options: { responsive: true }
+    });
+  </script>
+
+</body>
+</html>
