@@ -1,7 +1,6 @@
 # Dashboard – Health Campaign Performance Dashboard
 
 Created by **Cameron Olivier**  
-🔗 [Live Demo](https://camquistador.github.io/Dashboard/)
 
 ## 📄 Overview
 
@@ -44,6 +43,12 @@ This project was created to:
    ```bash
    git clone https://github.com/camquistador/Dashboard.git
    cd Dashboard
+
+2. Open index.html in your browser.
+
+🌐 Live Demo
+View the live project here:
+🔗 https://camquistador.github.io/Dashboard/
 
 🛑 Disclaimer
 This is a fictional dashboard project created solely for educational and portfolio purposes.
