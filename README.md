@@ -31,12 +31,6 @@ This project was created to:
 - Support interviews and job applications with Coffey Communications and similar organizations
 - Serve as a portfolio piece for roles in web development, healthcare marketing, and digital content delivery
 
-## 📸 Preview
-
-![MediMetrics Dashboard Preview](preview-image.png)
-
-> _Replace with a screenshot of your live dashboard for best presentation._
-
 ## 🚀 Getting Started
 
 1. Clone the repository:
